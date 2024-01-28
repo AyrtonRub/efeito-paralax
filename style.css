@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(imagens/image.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    font-size: 2.5rem;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+p {
+    padding: 1rem 0;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.container-conteudo {
+    padding: 2rem;
+    background-color: white;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.onda {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(imagens/onda.png);
+    background-size: 1000px 100px;
+    animation: animacao 5s ease-in-out  infinite alternate;
+}
+
+@keyframes animacao {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(10px);
+    }
+}
+
+#onda1 {
+    background-position-x: 400px;
+    z-index: 1000;
+    opacity: 1;
+}
+
+#onda2 {
+    background-position-x: 300px;
+    z-index: 999;
+    opacity: .5;
+}
+
+#onda3 {
+    background-position-x: 200px;
+    z-index: 998;
+    opacity: .2;
+}
+
+#onda4 {
+    background-position-x: 100px;
+    z-index: 997;
+    opacity: .8;
+}
+
+
+
+
+
+
+
